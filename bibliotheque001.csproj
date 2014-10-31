@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3755EE6-5C1A-416A-B1FA-FAAB8EE18EC6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>bibliothèque001</RootNamespace>
+    <AssemblyName>bibliothèque001</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajoutAbo_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajoutAbo_form.Designer.cs">
+      <DependentUpon>ajoutAbo_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="catalogue_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogue_form.Designer.cs">
+      <DependentUpon>catalogue_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="commandLivre_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="commandLivre_form.Designer.cs">
+      <DependentUpon>commandLivre_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="empAbo_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empAbo_form.Designer.cs">
+      <DependentUpon>empAbo_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="espaceAdmin_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="espaceAdmin_form.Designer.cs">
+      <DependentUpon>espaceAdmin_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="espacePerso_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="espacePerso_form.Designer.cs">
+      <DependentUpon>espacePerso_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gestAbo_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestAbo_form.Designer.cs">
+      <DependentUpon>gestAbo_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gestUsers_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestUsers_form.Designer.cs">
+      <DependentUpon>gestUsers_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inventaire_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inventaire_form.Designer.cs">
+      <DependentUpon>inventaire_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_frm.designer.cs">
+      <DependentUpon>login_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lstEmp_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lstEmp_form.Designer.cs">
+      <DependentUpon>lstEmp_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form.Designer.cs">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newEmp_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newEmp_form.Designer.cs">
+      <DependentUpon>newEmp_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rechEmp_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rechEmp_form.Designer.cs">
+      <DependentUpon>rechEmp_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="refLiv_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="refLiv_form.Designer.cs">
+      <DependentUpon>refLiv_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="relances_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="relances_form.Designer.cs">
+      <DependentUpon>relances_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="retourEmp_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="retourEmp_form.Designer.cs">
+      <DependentUpon>retourEmp_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="statsEmp_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statsEmp_form.Designer.cs">
+      <DependentUpon>statsEmp_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test_form.Designer.cs">
+      <DependentUpon>test_form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ajoutAbo_form.resx">
+      <DependentUpon>ajoutAbo_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogue_form.resx">
+      <DependentUpon>catalogue_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="commandLivre_form.resx">
+      <DependentUpon>commandLivre_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empAbo_form.resx">
+      <DependentUpon>empAbo_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="espaceAdmin_form.resx">
+      <DependentUpon>espaceAdmin_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="espacePerso_form.resx">
+      <DependentUpon>espacePerso_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestAbo_form.resx">
+      <DependentUpon>gestAbo_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestUsers_form.resx">
+      <DependentUpon>gestUsers_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventaire_form.resx">
+      <DependentUpon>inventaire_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_frm.resx">
+      <DependentUpon>login_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lstEmp_form.resx">
+      <DependentUpon>lstEmp_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form.resx">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newEmp_form.resx">
+      <DependentUpon>newEmp_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="rechEmp_form.resx">
+      <DependentUpon>rechEmp_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="refLiv_form.resx">
+      <DependentUpon>refLiv_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="relances_form.resx">
+      <DependentUpon>relances_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="retourEmp_form.resx">
+      <DependentUpon>retourEmp_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statsEmp_form.resx">
+      <DependentUpon>statsEmp_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test_form.resx">
+      <DependentUpon>test_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_biblio.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_biblio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_biblio1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
